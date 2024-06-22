@@ -50,4 +50,4 @@ int fib(int x)
 ```
 # Pascal's Triangle
 
-<img src="https://github.com/abhi0ekka/DSA/blob/master/image-used/pascal.jpg" width="300" height="300" />
+<img src="https://github.com/abhi0ekka/DSA/blob/master/image-used/pascal.jpg" width="500" height="450" />
