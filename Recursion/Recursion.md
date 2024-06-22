@@ -49,5 +49,38 @@ int fib(int x)
 }
 ```
 # Pascal's Triangle
+<img src="https://github.com/abhi0ekka/DSA/blob/master/image-used/pascal.jpg" width="500" height="450" /><br/>
+## nCr formula : General and Advanced way
+```c++
+#include <iostream>
+using namespace std;
 
-<img src="https://github.com/abhi0ekka/DSA/blob/master/image-used/pascal.jpg" width="500" height="450" />
+int fact(int);
+int fact(int n)
+{
+  if(n<=0)
+    return 1;
+  return n* fact(n-1);
+}
+
+int normal_ncr(int n,int r)
+{
+  int num,den;
+  num= fact(n);
+  den= fact(r)* fact(n-r);
+  return num/den;
+}
+
+int advance_ncr(int n,int r)
+{
+  if(n==r||r==0)
+    return 1;
+  return advance_ncr(n-1,r-1)+ advance_ncr(n-1,r);
+}
+
+int main()
+{
+  cout<<normal_ncr(3,2)<<endl;
+  cout<<advance_ncr(3,2);
+}
+```
