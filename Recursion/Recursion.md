@@ -48,3 +48,5 @@ int fib(int x)
 
 }
 ```
+# Pascal's Triangle
+![PASCAL'S TRIANGLE](/image-used/pascal.jpg width="200" )
