@@ -49,4 +49,5 @@ int fib(int x)
 }
 ```
 # Pascal's Triangle
-![PASCAL'S TRIANGLE](/image-used/pascal.jpg width="200" )
+
+<img src="https://github.com/abhi0ekka/DSA/blob/master/image-used/pascal.jpg" width="300" height="300" />
