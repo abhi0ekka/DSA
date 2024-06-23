@@ -27,8 +27,12 @@
 1. Normally like the Linear-Dimenson Array.
 2. Using the Pointer Array
    * In which all the Pointer Array Points different array in the Heap.
+   * In this pointer array is in stack and pointing array is in the heap.
+   * In this the pointer array and the variable is in the stack.
 3. Using double Pointer Array
    * In this just one step above from the second point.
+   * In this all the array is in the heap.
+   * only the variable is created in the stack.
 
 
 # Some Important Points :
