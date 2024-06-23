@@ -32,6 +32,8 @@
    * In this just one step above from the second point.
    * In this all the array is in the heap.
    * only the variable is created in the stack.
+### Accessing 2-Dimensonal Array:
+* We use Nested for loop to access the element of the array.
 
 
 # Some Important Points :
