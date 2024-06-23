@@ -27,6 +27,8 @@
 1. Normally like the Linear-Dimenson Array.
 2. Using the Pointer Array
    * In which all the Pointer Array Points different array in the Heap.
+3. Using double Pointer Array
+   * In this just one step above from the second point.
 
 
 # Some Important Points :
