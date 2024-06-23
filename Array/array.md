@@ -35,6 +35,10 @@
 ### Accessing 2-Dimensonal Array:
 * We use Nested for loop to access the element of the array.
 
+# How Compiler Access the element:
+* when the array is created it is created in the stack with some base address.
+  * when we try to access the element of the array.
+    * It uses the formula : <span style="color: red;">base address + element_access * size_of_data_type</span>. 
 
 # Some Important Points :
 + For any variable for any language the memory is created inside the Stack.
