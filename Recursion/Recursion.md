@@ -86,6 +86,7 @@ int main()
 ```
 # Tower Of Hanoi Problem :<br/>
 ![image](https://github.com/abhi0ekka/DSA/assets/75915784/80ac9a66-f21a-4417-92e4-a5bb60d37937)<br/>
+## Code for Tower Of Hanoi Problem:<br/>
 ```c++
 #include <iostream>
 #include <stdio.h>
