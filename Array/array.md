@@ -11,9 +11,19 @@
 ### Dynamic Array :
 + Dynamic Array is that in which size is declared at the Run Time.
 + But in C++ Programming language size of the Array can be created at the Run Time.
+
+
+
+
+
+
+
+
 # Some Important Points :
 + For any variable for any language the memory is created inside the Stack.
 + Data from the heap cannot be accessed Directly it should be accessed indirectly.
++ Stack Array Cannot be Resized.
++ Heap Array Can be Resized.
 ## For creating memory and Deallocation in heap :
 + C --->
   + For Memoryallocaton  :  (int*)malloc( number * size of int ).
