@@ -109,5 +109,5 @@ void TOH(int x, char a, char b, char c)
 }
 ```
 ## Recursion Call of the Tower Of Hanoi
-
+<img src="https://github.com/abhi0ekka/DSA/blob/master/image-used/Recursion-flow.jpg" width="1000" height="500" /><br/>
 
