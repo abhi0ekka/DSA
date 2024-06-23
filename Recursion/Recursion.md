@@ -84,3 +84,29 @@ int main()
   cout<<advance_ncr(3,2);
 }
 ```
+# Tower Of Hanoi Problem :<br/>
+![image](https://github.com/abhi0ekka/DSA/assets/75915784/80ac9a66-f21a-4417-92e4-a5bb60d37937)<br/>
+```c++
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+void TOH(int , char, char, char);
+
+int main()
+{
+  TOH(2,'A','B','C');
+}
+void TOH(int x, char a, char b, char c)
+{
+  if(x>0)
+  {
+    TOH(x-1,a,c,b);
+    printf("%c to %c\n",a,c);
+    TOH(x-1,b,a,c);
+  }
+}
+```
+## Recursion Call of the Tower Of Hanoi
+
+
