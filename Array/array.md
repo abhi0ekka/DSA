@@ -35,17 +35,40 @@
 ### Accessing 2-Dimensonal Array:
 * We use Nested for loop to access the element of the array.
 
+
+
+
 # How Compiler Access the element:
 * when the array is created it is created in the stack with some base address.
   * when we try to access the element of the array.
     * It uses the formula : <span style="color: red;"> base address + element_access * size_of_data_type </span>.
       * If we have some other programming language which indexing start with 1 then we will just modify the formula element_access will be element_access-1. 
 
+
+
+
+# How 2-Dimensonal Array are managed by the Compiler:
++ So, when we think of a 2Dimensonal array.
++ The first thing come to mind is that it will be stored in row and column.
++ But that not the case the 2Dimensonal array are stored linearly in the memory.
+
+## Ways of mapping 2Dimensonal Array:
+1. Row Major Mapping.
+2. Column Major Mapping.
+
+### Row Major Mapping :
+The element are stored in linear way in the format row by row.
+
+### Column Mojor Mapping :
+The element are stored in linear way in the format of column by column.
+
+## The Row Major Formula and Column Major are almost the same so there is no difference so compiler can use any of them.
 # Some Important Points :
 + For any variable for any language the memory is created inside the Stack.
 + Data from the heap cannot be accessed Directly it should be accessed indirectly.
 + Stack Array Cannot be Resized.
 + Heap Array Can be Resized.
++ Compiler uses formula to access the address for the Array.
 
   
 ## For creating memory and Deallocation in heap :
