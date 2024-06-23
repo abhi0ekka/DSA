@@ -1,6 +1,5 @@
 # Array :
 + Collection of similar data elements are called as Array.
-
   
 ## Basic things on Array :
 + Declaration of an Array.
