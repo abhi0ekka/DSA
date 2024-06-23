@@ -38,7 +38,8 @@
 # How Compiler Access the element:
 * when the array is created it is created in the stack with some base address.
   * when we try to access the element of the array.
-    * It uses the formula : <span style="color: red;"> base address + element_access * size_of_data_type </span>. 
+    * It uses the formula : <span style="color: red;"> base address + element_access * size_of_data_type </span>.
+      * If we have some other programming language which indexing start with 1 then we will just modify the formula element_access will be element_access-1. 
 
 # Some Important Points :
 + For any variable for any language the memory is created inside the Stack.
