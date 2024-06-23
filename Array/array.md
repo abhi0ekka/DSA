@@ -57,12 +57,12 @@
 2. Column Major Mapping.
 
 ### Row Major Mapping :
-The element are stored in linear way in the format row by row.
++ The element are stored in linear way in the format row by row.
 
 ### Column Mojor Mapping :
-The element are stored in linear way in the format of column by column.
++ The element are stored in linear way in the format of column by column.<br> <br>
+The Row Major Formula and Column Major are almost the same so there is no difference so compiler can use any of them.
 
-## The Row Major Formula and Column Major are almost the same so there is no difference so compiler can use any of them.
 # Some Important Points :
 + For any variable for any language the memory is created inside the Stack.
 + Data from the heap cannot be accessed Directly it should be accessed indirectly.
