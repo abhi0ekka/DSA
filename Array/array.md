@@ -40,8 +40,11 @@
 ### Row Major Mapping :
 + The element are stored in linear way in the format row by row.
 <img src="https://github.com/abhi0ekka/DSA/blob/master/image-used/row_major.jpg" width="900" height="900">
-### Column Mojor Mapping :
+
+### Column Major Mapping :
 + The element are stored in linear way in the format of column by column.<br> <br>
+<img src="https://github.com/abhi0ekka/DSA/blob/master/image-used/IMG_3455.jpg" width="500" height="400>
+
 The Row Major Formula and Column Major are almost the same so there is no difference so compiler can use any of them.
 # Some Important Points :
 + For any variable for any language the memory is created inside the Stack.
