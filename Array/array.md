@@ -70,6 +70,7 @@ The Row Major Formula and Column Major are almost the same so there is no differ
 + Stack Array Cannot be Resized.
 + Heap Array Can be Resized.
 + Compiler uses formula to access the address for the Array.
++ To Optimise the formula for accessing the element for n-Dimension element. Simply take common.
 
 ## For creating memory and Deallocation in heap :
 + C --->
