@@ -50,15 +50,17 @@
 ### Row Major Mapping :
 + The element are stored in linear way in the format row by row.
 <img src="https://github.com/abhi0ekka/DSA/blob/master/image-used/row_major.jpg" width="900" height="900">
+
 + for n-numbers of rows:
-    + formula - base_address + (i1*d2*d3 + i2*d3 + i3) * size_data_type.
+  + formula - base_address + (i1*d2*d3 + i2*d3 + i3) * size_data_type.
   
 
 ### Column Major Mapping :
 + The element are stored in linear way in the format of column by column.<br> <br>
 <img src="https://github.com/abhi0ekka/DSA/blob/master/image-used/IMG_3455.jpg" width="500" height="400">
+
 + for n-number of column :
-    + formula - base_address + (i3*d2*d3 + i2*d3 + i1) * size_data_type.
+  + formula - base_address + (i3*d2*d3 + i2*d3 + i1) * size_data_type.
 
 The Row Major Formula and Column Major are almost the same so there is no difference so compiler can use any of them.
 
