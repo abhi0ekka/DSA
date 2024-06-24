@@ -39,6 +39,7 @@
 2. Column Major Mapping.
 ### Row Major Mapping :
 + The element are stored in linear way in the format row by row.
+<img src="https://github.com/abhi0ekka/DSA/blob/master/image-used/row_major.jpg" width="900" height="900">
 ### Column Mojor Mapping :
 + The element are stored in linear way in the format of column by column.<br> <br>
 The Row Major Formula and Column Major are almost the same so there is no difference so compiler can use any of them.
