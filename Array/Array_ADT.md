@@ -73,12 +73,48 @@ for(i=0;i<len;i++)
 - After reading some pages i put it back to the shelves.
 - So, i can conclude that i will need that book again in future as i read only some pages of it.
 - So, if we work with the linear search algo it will take the same time.
-- if i search the book again.
+- if i search for the book again.
 - So, to over come this we can do something to make the linear search algo to work faster.
 - Method :
   - 1.Transposition:
-    In this we move the book 1 place infront of the last location.
-    So, the next time we seach for the book it will take (n-1) time.
+    - In this we move the book 1 place infront of the last location.
+    - So, the next time we seach for the book it will take (n-1) time.
   - 2.Move to Front/Head.
-    In this approach we move the book to the front.
-    So, it can be found directly if we search for it.
+    - In this approach we move the book to the front.
+    - So, it can be found directly if we search for it.
+
+### ii. Binary Search :
+
+- Must condition for the binary search algorithm is that Array must be sorted.
+- It check for the element by splitting it into 2 parts.
+- It can be done in two methods :
+  1.Using Loop :
+  ```c++
+      while(l<=h)
+      {
+          mid=(l+h)/2;
+          if(arr[mid]==sr)
+              cout<<"Found";
+          if(arr[mid]<sr)
+              l=mid+1;
+          if(arr[mid]>sr)
+              h=mid-1;
+      }
+  ```
+  2.Using Recursion :
+  ```c++
+    int binarySearch(l,h,sr)
+    {
+        int mid=(l+h)/2;
+        if(l<=h)
+            {
+                if(arr[mid]==sr)
+                    return 1;
+                if(sr<arr[mid])
+                    return binarySearch(l,mid-1,sr);
+                if(sr>arr[mid])
+                    return binarySearch(mid+1,h,sr);
+            }
+        return 0;
+    }
+  ```
