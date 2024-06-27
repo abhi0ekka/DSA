@@ -88,6 +88,7 @@ for(i=0;i<len;i++)
 - Must condition for the binary search algorithm is that Array must be sorted.
 - It check for the element by splitting it into 2 parts.
 - It can be done in two methods :
+- The time complexity for binarySearch is log(n)
   1.Using Loop :
   ```c++
       while(l<=h)
@@ -118,3 +119,44 @@ for(i=0;i<len;i++)
         return 0;
     }
   ```
+
+## 6.get(index) :
+
+- This is used to element of a index.
+
+## 7.set(index,x)
+
+- This is used to replace element to a certain index.
+
+## 8.max() :
+
+- To find the maximum element from the array.
+
+## 9.min() :
+
+- To find the minimum element from the arrya.
+
+## 10.sum() :
+
+- To find the sum of the array.
+
+## 11.reverse():
+
+- This can be done in multiple ways:
+  - 1.Using another Array and copying from the back.
+    - This have a time complexity of o(n).
+  - 2.Using swap
+    ```c++
+    for(i=0;j=len-1;i<j;i++;j--)
+    {
+        temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+    ```
+
+## 12.left Shift & Rotate:
+
+- For left shift we just move all the element to the left and we loose the first element.
+- In rotate all the element are move to the left but we do not loose the first element it is added to the last.
+- _This things are quite useful in daily life for example in LED Banner where text move from one side to another_
