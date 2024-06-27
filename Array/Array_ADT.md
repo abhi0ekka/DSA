@@ -42,5 +42,43 @@
 ```c++
     for(i=0;i<len-1;i++)
         a[i]=a[i+1];
-
 ```
+
+## 5.Searching :
+
+### i. Linear Search Method :
+
+- In linear Search Method we compare each index element with the search element.
+- It is done one by one and when we found the element we break through the loop.
+- It work for both the sorted and un-sorted Arrays.
+- It's time complexity is O(n)
+
+#### General Way :
+
+```c++
+for(i=0;i<len;i++)
+{
+    if(arr[i]==sr)
+    {
+        cout<<"The Number is present"<<endl;
+        break;
+    }
+}
+```
+
+#### Improving Linear Search :
+
+- If we talk in a open world way.
+- lets say we went to the library then i took a book.
+- After reading some pages i put it back to the shelves.
+- So, i can conclude that i will need that book again in future as i read only some pages of it.
+- So, if we work with the linear search algo it will take the same time.
+- if i search the book again.
+- So, to over come this we can do something to make the linear search algo to work faster.
+- Method :
+  - 1.Transposition:
+    In this we move the book 1 place infront of the last location.
+    So, the next time we seach for the book it will take (n-1) time.
+  - 2.Move to Front/Head.
+    In this approach we move the book to the front.
+    So, it can be found directly if we search for it.
