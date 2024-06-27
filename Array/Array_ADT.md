@@ -12,7 +12,7 @@
 - And we can also use & this method is only used for array.
 
 ```c++
-    for(int i : element)
+    for(int element : arr)
         cout<<element;
 ```
 
