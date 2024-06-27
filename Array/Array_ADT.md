@@ -1,6 +1,6 @@
 # Array Abstract Data Type
 
-## Display
+## 1.Display
 
 - To Display array we have to use a loop from 0 to the last index.
 
@@ -16,17 +16,31 @@
         cout<<element;
 ```
 
-## Add()/append()
+## 2.Add()/append()
 
 - We just take the last index and assign the element.
 
-## insert(intex,x)
+## 3.insert(intex,x)
 
 - Just take a loop from the last index.
 - And start copying the element of previous element.
+- length increase by 1.
 
 ```c++
     for(i=last;i>index;i++)
         a[i]=a[i-1];
     a[index]=x;
+
+```
+
+## 4.Deletion(index)
+
+- Start the loop from the index which you want to delete.
+- Then just assign the value of the next element.
+- length decrease by 1.
+
+```c++
+    for(i=0;i<len-1;i++)
+        a[i]=a[i+1];
+
 ```
