@@ -240,3 +240,36 @@ void insert(int arr[], int n, int size)
     }
 }
 ```
+
+## 14.checkSort() :
+
+- Check weather the entered array is sorted or not.
+
+  ```c++
+     #include <iostream>
+
+     using namespace std;
+
+     bool checkSort(int arr[], int);
+
+     int main()
+     {
+
+        int arr[] = {1, 2, 3, 4, 5, 6, 7, 7, 8, 1};
+        int size = sizeof(arr) / sizeof(arr[0]);
+        if (checkSort(arr, size))
+            cout << "It is Sorted";
+        else
+            cout << "It is not Sorted";
+     }
+
+     bool checkSort(int arr[], int size)
+     {
+        for (int i = 0; i < size - 1; i++)
+        {
+            if (arr[i] > arr[i + 1])
+                return false;
+        }
+        return true;
+     }
+  ```
