@@ -160,23 +160,24 @@ for(i=0;i<len;i++)
 - For left shift we just move all the element to the left and we loose the first element.
 - In rotate all the element are move to the left but we do not loose the first element it is added to the last.
 - _This things are quite useful in daily life for example in LED Banner where text move from one side to another._
+
   ```c++
   #include <iostream>
 
-using namespace std;
+    using namespace std;
 
-void leftShift(int arr[], int);
+    void leftShift(int arr[], int);
 
-int main()
-{
-    int arr[] = {5, 4, 3, 2, 1};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    int main()
+    {
+        int arr[] = {5, 4, 3, 2, 1};
+        int size = sizeof(arr) / sizeof(arr[0]);
 
-    cout << "Before Function Call" << endl;
+        cout << "Before Function Call" << endl;
 
-    for (int element : arr)
-        cout << element << " ";
-    cout << endl;
+        for (int element : arr)
+            cout << element << " ";
+        cout << endl;
 
     leftShift(arr, size);
 
@@ -184,18 +185,24 @@ int main()
     for (int element : arr)
         cout << element << " ";
     cout << endl;
-}
+    }
 
-void leftShift(int arr[], int size)
-{
-    int help = arr[0];
-    for (int i = 0; i < size - 1; i++)
-        arr[i] = arr[i + 1];
-    arr[size - 1] = help;
-}
-```
+
+
+    void leftShift(int arr[], int size)
+    {
+        int help = arr[0];
+            for (int i = 0; i < size - 1; i++)
+                arr[i] = arr[i + 1];
+            arr[size - 1] = help;
+    }
+
+  ```
+
 ## 13.insertInSort() :
+
 - To add element in the sorted array.
+
 ```c++
 #include <iostream>
 using namespace std;
