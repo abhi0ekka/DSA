@@ -321,6 +321,8 @@ int missingNumber(int arr[], int size)
 - which is constant till we find the element which is missing.
 - then we break through and print that number.
 
+![Array](https://media.geeksforgeeks.org/wp-content/uploads/20240404124326/Array-data-structure-2.webp)<br>
+
 ### code as follows :
 
 ```c++
