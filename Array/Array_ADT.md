@@ -350,3 +350,42 @@ int missingNumber(int arr[], int size)
     return -1;
 }
 ```
+
+# Find Multiple Missing Element in a Sorted Array :
+
+## 1.Simple Way :
+
+- In this we simply compare the differnce.
+- And for multiple difference we take a while loop.
+- till the new difference.
+
+```c++
+// To find multiple missing number in a continous sorted array.
+#include <iostream>
+using namespace std;
+
+void mMissingNumber(int arr[], int);
+
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 7, 8, 9, 11};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    mMissingNumber(arr, size);
+}
+
+void mMissingNumber(int arr[], int size)
+{
+    int diff = arr[0];
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] - i != diff)
+        {
+            while (diff < arr[i] - i)
+            {
+                cout << diff + i << " ";
+                diff++;
+            }
+        }
+    }
+}
+```
