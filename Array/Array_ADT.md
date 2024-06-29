@@ -276,11 +276,13 @@ void insert(int arr[], int n, int size)
 
 # Find Single Missing Element in a Sorted Array :
 
+## For first n-Number :
+
 - Finding the missing element form the first n-Natural Number.
 - For Doing this we just have to iterate throught the loop and find the sum.
 - Then find the actual sum of the numbers.
 
-## Code as follows :
+### Code as follows :
 
 ```c++
 //Finding missing number from the first N-Natural Number.
@@ -309,5 +311,40 @@ int missingNumber(int arr[], int size)
     }
 
     return a_sum - sum;
+}
+```
+
+## From some number to another :
+
+- In this we find the missing number when it is not starting from 1.
+- Logic, is simple we take the element and index difference.
+- which is constant till we find the element which is missing.
+- then we break through and print that number.
+
+### code as follows :
+
+```c++
+// In this we find the missing number in between of the natural number.
+#include <iostream> //Header file
+using namespace std;
+
+int missingNumber(int arr[], int);
+
+int main()
+{
+    int arr[] = {6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    cout << "The missing number is :" << missingNumber(arr, size);
+}
+
+int missingNumber(int arr[], int size)
+{
+    int diff = arr[0];
+    for (int i = 1; i < size; i++)
+    {
+        if ((arr[i] - i) != diff)
+            return diff + i;
+    }
+    return -1;
 }
 ```
