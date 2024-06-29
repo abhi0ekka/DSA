@@ -353,7 +353,7 @@ int missingNumber(int arr[], int size)
 
 # Find Multiple Missing Element in a Sorted Array :
 
-## 1.Simple Way :
+## 1.In Consecutive Number List:
 
 - In this we simply compare the differnce.
 - And for multiple difference we take a while loop.
