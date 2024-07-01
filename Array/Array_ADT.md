@@ -511,3 +511,28 @@ void duplicate(int arr[], int size)
 - then we check the sum is equal to or not the target value.
 
 ## 2. Using Hasing :
+
+- This is also simple.
+- First we copy the given array element as the index.
+- And, side by side we check weather the target - element is occupied or not.
+- If occupied means the remaining number is already found.
+- So, we can conclude that the Element,Element are the pair of the target.
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[] = {6, 3, 8, 16, 7, 5, 2, 9, 4, 10};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int H[11] = {0}, target = 10;
+
+    for (int i = 0; i < size; i++)
+    {
+        H[arr[i]] = 1;
+        if (H[target - arr[i]] == 1)
+            cout << arr[i] << " " << (target - arr[i]) << endl;
+    }
+}
+```
