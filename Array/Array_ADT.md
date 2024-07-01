@@ -422,3 +422,44 @@ void duplicate(int arr[], int size)
     }
 }
 ```
+
+## Print how many times the element are repeated :
+
+- If you see clearly you come to see that there is no point in assigning.
+- i as (j-1) it will also work as j assigned.
+- but we do this because :
+  - if we assign i as j.
+  - then in the if condition statement we have to check i+1.
+  - then it will go out of boundary.
+  - so, we have only assigned it as (j-1).
+  - to not to get out of boundary case.
+
+```c++
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+void countDuplicate(int arr[], int);
+
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 4, 5, 6, 7, 8, 8, 8, 9};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    countDuplicate(arr, size);
+}
+
+void countDuplicate(int arr[], int size)
+{
+    for (int i = 0; i < size - 1; i++)
+    {
+        if (arr[i] == arr[i + 1])
+        {
+            int j = i + 1;
+            while (arr[i] == arr[j])
+                j++;
+            printf("%d is Repeated %d times\n", arr[i], (j - i));
+            i = j - 1;
+        }
+    }
+}
+```
