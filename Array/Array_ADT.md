@@ -390,4 +390,35 @@ void mMissingNumber(int arr[], int size)
 }
 ```
 
+# Find duplicate element from the array :
 
+- Just to print out the duplicate element from the given array.
+
+## When the array is sorted :
+
+```c++
+#include <iostream>
+using namespace std;
+
+void duplicate(int arr[], int);
+
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 4, 5, 6, 7, 8, 8, 8, 9};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    duplicate(arr, size);
+}
+
+void duplicate(int arr[], int size)
+{
+    int last_dup = -1;
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] == arr[i + 1] && last_dup != arr[i])
+        {
+            cout << arr[i] << " ";
+            last_dup = arr[i];
+        }
+    }
+}
+```
