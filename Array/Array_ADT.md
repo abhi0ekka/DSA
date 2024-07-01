@@ -536,3 +536,39 @@ int main()
     }
 }
 ```
+
+## 3. When array is sorted Using two Pointer :
+
+- We just take 2 Pointers.
+- first from the start.
+- second from the end.
+- then we compare their sum.
+- if the sum is smaller we increase the first pointer.
+- if the sum is larger then we decrease the second pointer.
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[] = {1, 2, 4, 5, 6, 8, 9, 10, 12, 14};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int target = 10, i, j;
+    i = 0;
+    j = 9;
+    while (i < j)
+    {
+        if ((arr[i] + arr[j]) == target)
+        {
+            cout << arr[i] << " " << arr[j] << endl;
+            i++;
+            j--;
+        }
+        if ((arr[i] + arr[j]) < target)
+            i++;
+        if ((arr[i] + arr[j]) > target)
+            j--;
+    }
+}
+```
