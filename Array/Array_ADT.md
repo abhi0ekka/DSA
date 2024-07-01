@@ -463,3 +463,51 @@ void countDuplicate(int arr[], int size)
     }
 }
 ```
+
+## Find duplicate element in Un-sorted Array :
+
+- To find element in unsoreted array we just use the linear Search algorithm.
+
+```c++
+#include <iostream>
+using namespace std;
+
+void duplicate(int arr[], int);
+
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 4, 5, 6, 7, 8, 8, 8, 9};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    duplicate(arr, size);
+}
+
+void duplicate(int arr[], int size)
+{
+    for (int i = 0; i < size - 1; i++)
+    {
+        int count = 0;
+        for (int j = i + 1; j < size; j++)
+        {
+            if (arr[i] == arr[j] && arr[i] != -1)
+            {
+                count++;
+                arr[j] = -1;
+            }
+        }
+        if (count > 0)
+            cout << arr[i] << " ";
+    }
+}
+```
+
+# Two Sum Problem :
+
+- Here we, have to find two element whose sum is the target value.
+- just this,
+
+## 1.Normal :
+
+- In this we use linear search algorithm.
+- then we check the sum is equal to or not the target value.
+
+## 2. Using Hasing :
