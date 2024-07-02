@@ -112,3 +112,6 @@ void swap(char arr[], int size)
 # Palindome and String comparison :
 
 - we just have to compare each element one by one.
+- For palindrome we can use 2 approach.
+  - 1. To reverse and compare the strings.
+  - 2. Just compare the elements of the strings (using two pointers).
