@@ -108,3 +108,7 @@ void swap(char arr[], int size)
 - if you do not divide the by 2 then.
 - it will not normally print the char-string.
 - we have to use the array.
+
+# Palindome and String comparison :
+
+- we just have to compare each element one by one.
