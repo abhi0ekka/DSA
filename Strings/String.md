@@ -77,3 +77,34 @@ int length(char arr[])
 - Reversing a String can be done in various way :
   - 1. By using another Array (simple asf).
   - 2. By using swap-two-pointer.
+
+```c++
+#include <iostream>
+using namespace std;
+
+void swap(char arr[], int);
+
+int main()
+{
+    char name[] = "abhishek";
+    int s = sizeof(name) / sizeof(name[0]);
+    cout << "Before funcion call : " << name << endl;
+    swap(name, s);
+    cout << "After function call : " << name;
+}
+
+void swap(char arr[], int size)
+{
+    int i, j = size - 2;                   //Here we divided by two becuause last element is '\0'.
+    for (i = 0; i < j; i++, j--)
+    {
+        char temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+```
+
+- if you do not divide the by 2 then.
+- it will not normally print the char-string.
+- we have to use the array.
