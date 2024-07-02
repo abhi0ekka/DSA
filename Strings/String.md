@@ -115,3 +115,11 @@ void swap(char arr[], int size)
 - For palindrome we can use 2 approach.
   - 1. To reverse and compare the strings.
   - 2. Just compare the elements of the strings (using two pointers).
+
+# Finding Duplicate element of the array :
+
+- It is same as to find the duplicate element in the array.
+- The ways are :
+  - 1. Linear Comparing each element with the remaining element.
+  - 2. Using hash Table.
+  - 3. Using bitWise.
