@@ -123,3 +123,15 @@ void swap(char arr[], int size)
   - 1. Linear Comparing each element with the remaining element.
   - 2. Using hash Table.
   - 3. Using bitWise.
+
+# BitWise :
+
+- 1. Checking a bit is on or not is called masking.
+  - It is done by the use of Bit_AND operator.
+- 2. Turning a bit on is called as merging.
+  - It is done by the use of Bit_OR operator.
+- Note : BitWise operator are call by not call by reference they are call by value.
+  - So, if want to make any changes we have to store it.
+  - We cannot count how many times it is repeated.
+  - as bitwise is similar to hashing but in hasing we can increase a individual element.
+  - but in memeory we cant as it is only 0s and 1s.
