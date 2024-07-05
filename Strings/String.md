@@ -135,3 +135,31 @@ void swap(char arr[], int size)
   - We cannot count how many times it is repeated.
   - as bitwise is similar to hashing but in hasing we can increase a individual element.
   - but in memeory we cant as it is only 0s and 1s.
+
+```c++
+#include <iostream>
+using namespace std;
+
+void duplicate(char word[]);
+
+int main()
+{
+    char word[100];
+    cin >> word;
+    duplicate(word);
+}
+
+void duplicate(char word[])
+{
+    int H = 0;
+    for (int i = 0; word[i] != '\0'; i++)
+    {
+        int a = 1;
+        a = a << (word[i] - 65);
+        if ((a & H) > 0)
+            cout << word[i];
+        else
+            H = a | H;
+    }
+}
+```
