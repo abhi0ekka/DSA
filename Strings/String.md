@@ -155,7 +155,7 @@ void duplicate(char word[])
     for (int i = 0; word[i] != '\0'; i++)
     {
         int a = 1;
-        a = a << (word[i] - 65);
+        a = a << (word[i] - 97);
         if ((a & H) > 0)
             cout << word[i];
         else
