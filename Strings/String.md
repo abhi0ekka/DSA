@@ -163,3 +163,8 @@ void duplicate(char word[])
     }
 }
 ```
+
+# Anagram :
+
+- In this we compare element of two strings.
+- Means String2 should be made of of String1.
