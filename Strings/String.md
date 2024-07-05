@@ -168,3 +168,12 @@ void duplicate(char word[])
 
 - In this we compare element of two strings.
 - Means String2 should be made of of String1.
+
+# Permutation of String :
+
+- In this we have to find all the possible combination of a string.
+- This can be obtained by using :
+  - 1. Loop.
+  - 2. recursion.
+
+![alt text](https://miro.medium.com/v2/resize:fit:1024/format:webp/1*QBEePGu2SigGcbMeMqwTbA.png)
